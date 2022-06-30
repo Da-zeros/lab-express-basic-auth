@@ -1,0 +1,21 @@
+<div class="contForm">
+    <h2>Sign In</h2>
+    <hr>
+    <form action="/auth/signup" method="post">
+        
+        <div class="form-group">
+            <label for="username">Nombre:</label>
+            <input type="text" name="username">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="password">password:</label>
+            <input type="password" name="password">
+        </div>
+        <br>
+        {{#if errorMessage}}
+            <p class="error">{{errorMessage}}</p>
+        {{/if}}
+        <input type="submit" value="Save">Create account
+    </form>
+</div>
